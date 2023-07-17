@@ -23,10 +23,15 @@ public class DatabaseTestingPage {
 		driver  = new ChromeDriver();
 		
 		String  fname = faker.name().firstName();
+		System.out.println(fname);
 		String  lname = faker.name().lastName();
+		System.out.println(lname);
 		String 	email = faker.internet().emailAddress();
+		System.out.println(email);
 		String  phonenumber = faker.phoneNumber().cellPhone();
+		System.out.println(phonenumber);
 		String  password = faker.internet().password(8, 9, true);
+		System.out.println(password);
 		String  conpassword = password;
 		
 		
